@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    tools:context="com.example.android.newstudentguider.MainActivity"
+    android:background="#faf7de">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:visibility="visible"
+            android:id="@+id/intro">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/nsgg"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#c6e6e9eb"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I am a new international student"
+                    android:id="@+id/checkBox"
+                    android:checked="false"
+                    android:paddingLeft="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="20dp" />
+
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Enter"
+            android:onClick="display" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_margin="20dp"
+            android:id="@+id/information">
+
+            <TextView
+                android:id="@+id/greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:textIsSelectable="false"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+                android:textColorHighlight="#3e0101"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Starting Off Easy"
+                android:layout_marginBottom="5dp"
+                android:visibility="visible"
+                android:onClick="btn1display" />
+
+            <TextView
+                android:id="@+id/info1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="International students entering US for college are full of vigor and ambition. They want to gain as much experience as they can while they are here. This mentality for teenage freshmen sometimes turns out to be a bit overwhelming when they are immersed in the entirely new culture. The right thing to do would be to take things slowly and one step at a time. Do not be tempted to take 18 hours of classes or be looking to earn dollars right from your first week in the US."
+                android:visibility="gone"
+                android:layout_marginBottom="25dp"
+                />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Travelling and Shopping"
+                android:layout_marginBottom="5dp"
+                android:onClick="btn2display" />
+
+            <TextView
+                android:id="@+id/info2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Until you have your own car travelling in US is very limited and sometimes frustrating too. However, please ask for help if you need to go around the city for groceries and clothes.  Most people would be happy to give you a short ride to Walmart or Mall."
+                android:visibility="gone"
+                android:layout_marginBottom="25dp"/>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Campus Involvement"
+                android:layout_marginBottom="5dp"
+                android:onClick="btn3display" />
+
+            <TextView
+                android:id="@+id/info3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="It’s hard not to miss your family when you are so young and far away from them. Homesickness is real and it can happen to anyone. But, there are ways to tackle it. Make friends on campus by joining college group and organizations. Most colleges here have a large number of student organization which you can delve into. "
+                android:visibility="gone"
+                android:layout_marginBottom="25dp"/>
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maintaining your health"
+                android:layout_marginBottom="5dp"
+                android:onClick="btn4display" />
+
+            <TextView
+                android:id="@+id/info4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Where to go when you need a medical assistance?  Health Care System is very different in US from other countries. Counsel with senior international students before you go to Emergency or hospital. Hospital fees are very expensive which sometimes may be avoided by visiting to College Health Service or Public Free Care Services in Hospital. Have a health insurance coverage all the time you are here. "
+                android:visibility="gone"
+                android:layout_marginBottom="25dp"/>
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maintaining your student status"
+                android:layout_marginBottom="5dp"
+                android:onClick="btn5display" />
+
+            <TextView
+                android:id="@+id/info5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="You have to take minimum of 12 hours per semester to maintain your student status. Remember it’s illegal for an international student to work off campus without a Work Authorization. However, you may apply for Work Authorization with USCIS if you are in serious financial need.  If you want to work during summer and breaks you can talk to your international counselor for CPT work authorization."
+                android:visibility="gone"
+                android:layout_marginBottom="25dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
